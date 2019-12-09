@@ -1,6 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { generate } from "./utils/words";
+
+const initialWords = generate();
 
 function App() {
   return (
