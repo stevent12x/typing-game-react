@@ -1,7 +1,7 @@
-import {useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const useKeyPress = callback => {
-	const {keyPressed, setKeyPressed} = useState();
+	const [keyPressed, setKeyPressed] = useState();
 
 	useEffect(() => {
 		const downHandler = ({key}) => {

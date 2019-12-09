@@ -2,10 +2,15 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { generate } from "./utils/words";
+import useKeyPress from "./hooks/useKeyPress";
 
 const initialWords = generate();
 
 function App() {
+
+  useKeyPress(key => {
+  });
+
   return (
     <div className="App">
       <header className="App-header">
